@@ -1,0 +1,34 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "autoupdate": false,
+  "plugins": [
+    "@dietrichgebert/ponytail"
+  ],
+  "permission": {
+    "playwright_browser_run_code_unsafe": "ask"
+  },
+  "mcp": {
+    "context7": {
+      "type": "remote",
+      "url": "https://mcp.context7.com/mcp"
+    },
+    "deepwiki": {
+      "type": "remote",
+      "url": "https://mcp.deepwiki.com/mcp"
+    },
+    "playwright": {
+      "type": "local",
+      "command": ["node", "/home/fikri/.config/opencode/node_modules/@playwright/mcp/cli.js", "--headless", "--isolated", "--output-dir", "/tmp/opencode/playwright-mcp"],
+      "enabled": true
+    },
+    "servers": {
+      "github": {
+        "type": "local",
+        "command": [
+          "/home/fikri/.local/bin/github-mcp-server",
+          "stdio"
+        ]
+      }
+    }
+  }
+}

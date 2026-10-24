@@ -1,0 +1,72 @@
+# Katalog MCP (65 server)
+
+Sumber: `.hermes/hermes-agent/optional-mcps/*/manifest.yaml` (disalin ke `optional-mcps/`).
+Konfigurasi opencode pakai blok `mcp`. Contoh siap pakai ada di `mcp-catalog.jsonc`.
+
+| server | transport | auth | endpoint |
+|---|---|---|---|
+| `airtable` | http | oauth | https://mcp.airtable.com/mcp |
+| `algolia` | http | oauth | https://mcp.algolia.com/mcp |
+| `alltrails` | http | none | https://www.alltrails.com/mcp |
+| `amplitude` | http | oauth | https://mcp.amplitude.com/mcp |
+| `asana` | http | oauth | https://mcp.asana.com/sse |
+| `atlassian` | http | oauth | https://mcp.atlassian.com/v1/mcp/authv2 |
+| `attio` | http | oauth | https://mcp.attio.com/mcp |
+| `aws-knowledge` | http | none | https://knowledge-mcp.global.api.aws |
+| `betterstack` | http | oauth | https://mcp.betterstack.com |
+| `buildkite` | http | oauth | https://mcp.buildkite.com/mcp |
+| `calendly` | http | oauth | https://mcp.calendly.com |
+| `canva` | http | oauth | https://mcp.canva.com/mcp |
+| `circleci` | http | oauth | https://mcp.circleci.com/v1/mcp |
+| `clickup` | http | oauth | https://mcp.clickup.com/mcp |
+| `close` | http | oauth | https://mcp.close.com/mcp |
+| `cloudflare` | http | oauth | https://mcp.cloudflare.com/mcp?codemode=false |
+| `cloudinary` | http | oauth | https://asset-management.mcp.cloudinary.com/mcp |
+| `comfy-cloud` | http | oauth | https://cloud.comfy.org/mcp |
+| `context7` | http | none | https://mcp.context7.com/mcp |
+| `craft` | http | oauth | https://mcp.craft.do/my/mcp |
+| `datadog` | http | oauth | https://mcp.datadoghq.com/api/unstable/mcp-server/mcp |
+| `deepwiki` | http | none | https://mcp.deepwiki.com/mcp |
+| `dropbox` | http | oauth | https://mcp.dropbox.com/mcp |
+| `figma` | http | oauth | https://mcp.figma.com/mcp |
+| `fireflies` | http | oauth | https://api.fireflies.ai/mcp |
+| `gamma` | http | oauth | https://mcp.gamma.app/mcp |
+| `gitlab` | http | oauth | https://gitlab.com/api/v4/mcp |
+| `globalping` | http | oauth | https://mcp.globalping.dev/mcp |
+| `grafana` | http | oauth | https://mcp.grafana.com/mcp |
+| `hugging_face` | http | oauth | https://huggingface.co/mcp |
+| `indeed` | http | oauth | https://mcp.indeed.com/claude/mcp |
+| `intercom` | http | oauth | https://mcp.intercom.com/mcp |
+| `kiwi` | http | none | https://mcp.kiwi.com |
+| `klaviyo` | http | oauth | https://mcp.klaviyo.com/mcp?core-tools-only=true&disable-tools-with-user-generated-content=true |
+| `linear` | http | oauth | https://mcp.linear.app/mcp |
+| `microsoft-learn` | http | none | https://learn.microsoft.com/api/mcp |
+| `miro` | http | oauth | https://mcp.miro.com/ |
+| `mixpanel` | http | oauth | https://mcp.mixpanel.com/mcp |
+| `monday` | http | oauth | https://mcp.monday.com/mcp |
+| `motherduck` | http | oauth | https://api.motherduck.com/mcp |
+| `n8n` | stdio | api_key | https://github.com/CyberSamuraiX/hermes-n8n-mcp.git |
+| `neon` | http | oauth | https://mcp.neon.tech/mcp |
+| `netlify` | http | oauth | https://netlify-mcp.netlify.app/mcp |
+| `notion` | http | oauth | https://mcp.notion.com/mcp |
+| `paypal` | http | oauth | https://mcp.paypal.com/sse |
+| `plaid` | http | oauth | https://api.dashboard.plaid.com/mcp/ |
+| `postman` | http | oauth | https://mcp.postman.com/minimal |
+| `prisma-postgres` | http | oauth | https://mcp.prisma.io/mcp |
+| `railway` | http | oauth | https://mcp.railway.com |
+| `robinhood` | http | oauth | https://agent.robinhood.com/mcp/trading |
+| `semgrep` | http | oauth | https://mcp.semgrep.ai/mcp |
+| `sentry` | http | oauth | https://mcp.sentry.dev/mcp |
+| `square` | http | oauth | https://mcp.squareup.com/sse |
+| `strava` | http | oauth | https://mcp.strava.com/mcp |
+| `stripe` | http | oauth | https://mcp.stripe.com |
+| `supabase` | http | oauth | https://mcp.supabase.com/mcp |
+| `todoist` | http | oauth | https://ai.todoist.net/mcp |
+| `trivago` | http | none | https://mcp.trivago.com/mcp |
+| `twelve-data` | http | oauth | https://mcp.twelvedata.com/mcp |
+| `twilio-docs` | http | none | https://mcp.twilio.com/docs |
+| `unreal-engine` | http | none | http://127.0.0.1:8000/mcp |
+| `vercel` | http | oauth | https://mcp.vercel.com |
+| `webflow` | http | oauth | https://mcp.webflow.com/mcp |
+| `wolfram` | http | none | https://agenttools.wolfram.com/mcp |
+| `wordpress-com` | http | oauth | https://public-api.wordpress.com/wpcom/v2/mcp/v1 |

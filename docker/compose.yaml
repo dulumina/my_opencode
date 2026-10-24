@@ -1,0 +1,26 @@
+services:
+  postgres:
+    image: pgvector/pgvector:pg17
+    container_name: opencode-knowledge-db
+    restart: unless-stopped
+
+    ports:
+      - "127.0.0.1:55432:5432"
+
+    env_file:
+      - .env
+
+    volumes:
+      - opencode_knowledge_data:/var/lib/postgresql/data
+
+    healthcheck:
+      test:
+        - CMD-SHELL
+        - pg_isready -U "$$POSTGRES_USER" -d "$$POSTGRES_DB"
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+
+volumes:
+  opencode_knowledge_data:
