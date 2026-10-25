@@ -174,7 +174,12 @@ export default Plugin.define({
             orderBy: "modifiedTime desc",
             fields: "files(id,name,mimeType,modifiedTime,webViewLink,description)",
           })
-          return { content: JSON.stringify(result.data.files || [], null, 2) }
+          const files = result.data.files || []
+          if (files.length === 0) return { content: "No files found." }
+          const formatted = files
+            .map((f) => `- [${f.id}] ${f.name} (${f.mimeType})${f.modifiedTime ? ` [${f.modifiedTime}]` : ""}${f.webViewLink ? ` <${f.webViewLink}>` : ""}`)
+            .join("\n")
+          return { content: formatted }
         },
       })
 
@@ -194,7 +199,12 @@ export default Plugin.define({
             q: `${folder}trashed = false`, pageSize: page_size || 20, orderBy: "modifiedTime desc",
             fields: "files(id,name,mimeType,modifiedTime,webViewLink)",
           })
-          return { content: JSON.stringify(result.data.files || [], null, 2) }
+          const files = result.data.files || []
+          if (files.length === 0) return { content: "No files found." }
+          const formatted = files
+            .map((f) => `- [${f.id}] ${f.name} (${f.mimeType})${f.webViewLink ? ` <${f.webViewLink}>` : ""}`)
+            .join("\n")
+          return { content: formatted }
         },
       })
 
@@ -214,11 +224,11 @@ export default Plugin.define({
             for (const item of doc.data.body?.content || []) {
               for (const el of item.paragraph?.elements || []) if (el.textRun?.content) parts.push(el.textRun.content)
             }
-            return { content: JSON.stringify({ metadata: meta.data, text: parts.join("") }, null, 2) }
+            return { content: `# ${meta.data.name ?? file_id}\n\n${parts.join("")}` }
           }
           if (meta.data.mimeType === "text/plain") {
             const response = await drive.files.get({ fileId: file_id, alt: "media" }, { responseType: "text" })
-            return { content: JSON.stringify({ metadata: meta.data, text: response.data }, null, 2) }
+            return { content: `# ${meta.data.name ?? file_id}\n\n${response.data}` }
           }
           return { content: `Cannot read ${meta.data.mimeType} as plain text with this tool. Open it at ${meta.data.webViewLink || "Google Drive"}; supported direct reading: Google Docs and text/plain files.` }
         },
@@ -238,7 +248,7 @@ export default Plugin.define({
           if (!id) throw new Error("Google Docs did not return a document ID")
           if (content) await docs.documents.batchUpdate({ documentId: id, requestBody: { requests: [{ insertText: { location: { index: 1 }, text: content } }] } })
           const meta = await drive.files.get({ fileId: id, fields: "id,name,webViewLink" })
-          return { content: JSON.stringify(meta.data, null, 2) }
+          return { content: `Created Google Doc "${meta.data.name ?? title}" (${id})${meta.data.webViewLink ? `: ${meta.data.webViewLink}` : ""}` }
         },
       })
 

@@ -309,7 +309,14 @@ export default Plugin.define({
               WHERE id = ${a.id}
             `
             if (rows.length === 0) return text(`id ${a.id} tidak ditemukan.`)
-            return text(JSON.stringify(rows[0], null, 2))
+            const r = rows[0]
+            const meta = [
+              `[#${r.id}] ${r.title} (${r.status})`,
+              r.source ? `Source: ${r.source}${r.source_url ? ` <${r.source_url}>` : ""}` : "",
+              r.tags?.length ? `Tags: ${r.tags.join(", ")}` : "",
+              r.reviewed_by ? `Reviewed by: ${r.reviewed_by}` : "",
+            ].filter(Boolean).join(" | ")
+            return text(`${meta}\n\n${r.content}`)
           } catch (e) {
             return text(`Gagal mengambil: ${msg(e)}`)
           }

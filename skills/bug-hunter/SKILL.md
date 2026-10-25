@@ -1,6 +1,6 @@
 ---
 name: bug-hunter
-description: "Precision-first adversarial bug hunting for runtime, logic, data, concurrency, and security defects. Uses deterministic risk triage, evidence-bounded retrieval, Hunter/Skeptic/Referee review, optional hybrid verification, and explicit immutable Fixer scope. Scan-only and single-pass by default; complete-coverage loops, edits, autonomous fixes, and commits each require explicit intent. Use for code review, security audits, regression hunting, PR review, and evidence-backed remediation planning in skills-capable coding agents."
+description: Adversarial bug hunting for runtime errors, logic bugs, concurrency flaws, and edge cases.
 ---
 
 # Bug Hunter — precision-first adversarial code audit

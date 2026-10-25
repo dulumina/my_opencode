@@ -1,25 +1,6 @@
 ---
 name: threat-modeling
-description: >
-  Runs a structured STRIDE threat model on any system design, API specification,
-  or codebase. Auto-invoked when the user discusses architecture, shares a system
-  diagram or design document, or asks "what could go wrong?" Produces threat actor
-  profiles, component-threat matrix, a threat register with STRIDE classification,
-  data-flow diagram template, trust boundary identification, and prioritized
-  mitigations mapped to MITRE ATT&CK techniques.
-tags: [appsec, design, architecture, threat-model]
-role: [security-engineer, architect, appsec-engineer, vciso]
-phase: [design, review]
-frameworks: [STRIDE, PASTA, MITRE-ATT&CK]
-difficulty: intermediate
-time_estimate: "30-60min"
-version: "1.0.0"
-author: unitoneai
-license: MIT
-allowed-tools: Read, Grep, Glob
-context: fork
-injection-hardened: true
-argument-hint: "[target-file-or-directory]"
+description: Run structured STRIDE threat modeling on system designs, APIs, and trust boundaries.
 ---
 
 # Threat Modeling Skill — STRIDE Methodology

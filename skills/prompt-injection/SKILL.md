@@ -1,24 +1,6 @@
 ---
 name: prompt-injection
-description: >
-  Tests LLM applications for prompt injection vulnerabilities per OWASP LLM01:2025.
-  Covers direct injection (user input manipulating model behavior) and indirect
-  injection (external content containing hidden instructions). Auto-invoked when
-  reviewing LLM applications that process external content, build RAG pipelines,
-  or accept user input that reaches a language model. Produces a test report with
-  categorized findings and defense recommendations.
-tags: [ai-security, prompt-injection, llm, testing]
-role: [appsec-engineer, security-engineer]
-phase: [build, review, operate]
-frameworks: [OWASP-LLM01-2025, MITRE-ATLAS]
-difficulty: advanced
-time_estimate: "30-60min"
-version: "1.0.2"
-author: unitoneai
-license: MIT
-allowed-tools: Read, Grep, Glob
-injection-hardened: true
-argument-hint: "[target-file-or-directory]"
+description: Identify and mitigate LLM prompt injection and jailbreak vulnerabilities.
 ---
 
 # Prompt Injection Vulnerability Assessment

@@ -1,9 +1,6 @@
 ---
 name: mcp-servers
-description: >-
-  Katalog 65 MCP server hasil migrasi dari Hermes (nama, kategori, deskripsi).
-  Gunakan saat perlu mencari MCP server berdasarkan nama/kategori, atau mengecek
-  daftar server yang tersedia untuk konfigurasi opencode.
+description: Reference catalog and configuration guide for MCP servers in OpenCode.
 ---
 # MCP Servers Skill
 **MCP Server Catalog Migrated from Hermes**

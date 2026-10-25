@@ -1,17 +1,6 @@
 ---
 name: react-expert
-description: Use when building React 18+ applications in .jsx or .tsx files, Next.js App Router projects, or create-react-app setups. Creates components, implements custom hooks, debugs rendering issues, migrates class components to functional, and implements state management. Invoke for Server Components, Suspense boundaries, useActionState forms, performance optimization, or React 19 features.
-license: MIT
-compatibility: opencode
-metadata:
-  author: https://github.com/Jeffallan
-  version: "1.1.0"
-  domain: frontend
-  triggers: React, JSX, hooks, useState, useEffect, useContext, Server Components, React 19, Suspense, TanStack Query, Redux, Zustand, component, frontend
-  role: specialist
-  scope: implementation
-  output-format: code
-  related-skills: fullstack-guardian, playwright-expert, react-native-expert, shopify-expert, test-master
+description: React 18/19, Next.js App Router, hooks, state management, and component architecture.
 ---
 
 # React Expert

@@ -1,17 +1,6 @@
 ---
 name: web-ui-ux-premium
-description: >-
-  Panduan mendesain UI/UX untuk website yang modern, responsive, interaktif,
-  dan terasa premium/mahal, bukan template generik. Gunakan skill ini setiap
-  kali user meminta desain website, landing page, redesign UI, mockup web,
-  atau menyebut kata modern, responsive, interaktif, premium, elegan,
-  high-end, mewah terkait sebuah web atau produk digital, bahkan jika mereka
-  hanya bilang "buatin website" tanpa detail lebih lanjut. Cakupan meliputi
-  sistem desain (warna, tipografi, layout, spacing), micro-interaction dan
-  animasi yang purposeful, strategi responsive mobile-first, dan checklist
-  kualitas sebelum kode dikirim. Trigger ini juga berlaku untuk permintaan
-  dalam bentuk kode (HTML/CSS/JS, React, Tailwind) maupun mockup visual
-  (Design artifact atau Figma).
+description: Panduan mendesain UI/UX website modern, responsif, dan premium dengan micro-interaction dan design system khas.
 ---
 
 # Web UI/UX Premium

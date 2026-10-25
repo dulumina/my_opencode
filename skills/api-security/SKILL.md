@@ -1,22 +1,6 @@
 ---
 name: api-security
-description: >
-  Reviews REST and GraphQL APIs against the OWASP API Security Top 10:2023.
-  Auto-invoked when reviewing OpenAPI/Swagger specs, API endpoint code, or
-  GraphQL schemas. Covers BOLA, BFLA, authentication, rate limiting, and
-  SSRF. Produces findings mapped to API1-API10 with remediation guidance.
-tags: [appsec, api, rest, graphql]
-role: [appsec-engineer, security-engineer]
-phase: [design, build, review]
-frameworks: [OWASP-API-Security-2023, OWASP-ASVS]
-difficulty: intermediate
-time_estimate: "20-40min"
-version: "1.0.0"
-author: unitoneai
-license: MIT
-allowed-tools: Read, Grep, Glob
-injection-hardened: true
-argument-hint: "[target-file-or-directory]"
+description: Audit and implement API security, rate limiting, token validation, and OAuth2/JWT security.
 ---
 
 # API Security Review -- OWASP API Security Top 10:2023

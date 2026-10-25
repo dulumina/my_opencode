@@ -1,24 +1,6 @@
 ---
 name: secrets-management
-description: >
-  Performs a structured secrets management review against OWASP Secrets
-  Management Cheat Sheet and NIST SP 800-57 Part 1 Rev 5 (Recommendation for
-  Key Management). Auto-invoked when reviewing secret handling patterns, vault
-  configurations, .env files, or credential rotation policies. Produces a secrets
-  management assessment covering detection patterns, rotation automation, vault
-  integration, and agent-specific credential handling.
-tags: [devsecops, secrets, vault, rotation]
-role: [security-engineer, devsecops]
-phase: [build, operate]
-frameworks: [OWASP-Secrets-Management, NIST-SP-800-57-Part1-Rev5]
-difficulty: intermediate
-time_estimate: "20-40min"
-version: "1.0.1"
-author: unitoneai
-license: MIT
-allowed-tools: Read, Grep, Glob
-injection-hardened: true
-argument-hint: "[target-file-or-directory]"
+description: Audit secret handling, credential rotation, vault integrations, and .env security.
 ---
 
 # Secrets Management Review

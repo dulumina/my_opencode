@@ -1,17 +1,6 @@
 ---
 name: laravel-specialist
-description: Build and configure Laravel 10+ applications, including creating Eloquent models and relationships, implementing Sanctum authentication, configuring Horizon queues, designing RESTful APIs with API resources, and building reactive interfaces with Livewire. Use when creating Laravel models, setting up queue workers, implementing Sanctum auth flows, building Livewire components, optimising Eloquent queries, or writing Pest/PHPUnit tests for Laravel features.
-license: MIT
-compatibility: opencode
-metadata:
-  author: https://github.com/Jeffallan
-  version: "1.1.0"
-  domain: backend
-  triggers: Laravel, Eloquent, PHP framework, Laravel API, Artisan, Blade templates, Laravel queues, Livewire, Laravel testing, Sanctum, Horizon
-  role: specialist
-  scope: implementation
-  output-format: code
-  related-skills: devops-engineer, fullstack-guardian, security-reviewer, test-master, wordpress-pro
+description: Develop Laravel applications, Eloquent models, migrations, queues, and API resources.
 ---
 
 # Laravel Specialist

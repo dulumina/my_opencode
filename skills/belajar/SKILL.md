@@ -1,11 +1,6 @@
 ---
 name: belajar
-description: >-
-  Cross-session memory pakai basis pengetahuan tim (knowledge, PostgreSQL+pgvector).
-  Gunakan saat ada fakta stabil yang perlu diingat lintas sesi: profil/preferensi user,
-  konteks proyek (nama, path, stack, konvensi kode), atau aturan/instruksi kerja.
-  Trigger: "pelajari <file>", "ingatkan...", "simpan ke memory", "catat ini".
-  Semua simpanan wajib pending dulu; hanya approved yang dianggap tepercaya.
+description: Panduan belajar konsep teknis, dokumentasi terstruktur, dan pemahaman mendalam.
 ---
 # Skill: Belajar (Cross-session Memory)
 

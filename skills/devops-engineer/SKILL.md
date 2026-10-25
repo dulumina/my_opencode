@@ -1,17 +1,6 @@
 ---
 name: devops-engineer
-description: Creates Dockerfiles, configures CI/CD pipelines, writes Kubernetes manifests, and generates Terraform/Pulumi infrastructure templates. Handles deployment automation, GitOps configuration, incident response runbooks, and internal developer platform tooling. Use when setting up CI/CD pipelines, containerizing applications, managing infrastructure as code, deploying to Kubernetes clusters, configuring cloud platforms, automating releases, or responding to production incidents. Invoke for pipelines, Docker, Kubernetes, GitOps, Terraform, GitHub Actions, on-call, or platform engineering.
-license: MIT
-compatibility: opencode
-metadata:
-  author: https://github.com/Jeffallan
-  version: "1.1.0"
-  domain: devops
-  triggers: DevOps, CI/CD, deployment, Docker, Kubernetes, Terraform, GitHub Actions, infrastructure, platform engineering, incident response, on-call, self-service
-  role: engineer
-  scope: implementation
-  output-format: code
-  related-skills: architecture-designer, chaos-engineer, cli-developer, cloud-architect, csharp-developer, database-optimizer, fine-tuning-expert, fullstack-guardian, golang-pro, java-architect, kubernetes-specialist, laravel-specialist, legacy-modernizer, mcp-developer, microservices-architect, ml-pipeline, monitoring-expert, nestjs-expert, playwright-expert, postgres-pro, python-pro, salesforce-developer, security-reviewer, spark-engineer, spring-boot-engineer, sql-pro, sre-engineer, terraform-engineer, test-master, websocket-engineer
+description: Create Dockerfiles, CI/CD pipelines, Kubernetes manifests, and deployment automation.
 ---
 
 # DevOps Engineer
